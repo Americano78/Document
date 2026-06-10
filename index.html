@@ -11,6 +11,43 @@
         font-family: Arial, Helvetica, sans-serif;
         background: #e5ecef;
     }
+    .dark-section{
+        background: #001d29;
+        padding:80
+    }
+    .categories{
+            max-width:1100px;
+            margin:0 auto;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap:20px;
+        }
+        .category-card{
+            background:#1a3b49;
+            border-radius:15px;
+            padding:20px;
+            min-height:130px;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            transition: 0.3s;
+            cursor:pointer;
+        }
+        .category-card:hover {
+            transform: translate(-4px);
+            background: #1f4657;
+        }
+        .category-card img{
+            width: 100%;
+            height: 120px;
+            object-fit:contain;
+        }
+        .category-card span{
+            color:#fff;
+            font-size:16px;
+            font-weight:600;
+          }
     .container{
         max-width: 1110px;
         margin: 0 auto;
@@ -18,8 +55,8 @@
     }
     .section-title{
         text-align: center;
-        font-size: 24px;
-        font-weight: 500;
+        font-size: 44px;
+        font-weight: 800;
         color:#001d29;
         margin-bottom:50px;
     }
@@ -102,7 +139,7 @@
     }
     @media screen and (max-width: 990px){
         .advantages-grid{
-            grid-template-columns: (2,1fr);
+            grid-template-columns: repeat(2,1fr);
 
         }
     }
@@ -121,6 +158,24 @@
         .section-title{
             font-size:32px;
         }
+        .categories{
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .category-card{
+        min-height: 140px;
+        padding: 15px;
+    }
+
+    .category-card img{
+        width: 70px;
+        height: 70px;
+    }
+
+    .category-card span{
+        font-size: 16px;
+    }
         }
      .cases{
          background: #e5ecef;
@@ -134,8 +189,8 @@
      }
      .cases-title{
          text-align: center;
-         font-size: 21px;
-         font-weight: 500;
+         font-size: 44px;
+         font-weight: 800;
          margin-bottom: 30px;
          color: #001d29;
      }
@@ -208,11 +263,105 @@
      .cases-btn:hover{
          background: #b91c1c;
      }
+     .media-section{
+        padding: 70px 20px;
+        text-align: center;
+     }
+     .media-title{
+        font-size:44px;
+        font-weight: 800;
+        color:#001d29;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+     }
+     .media-grid{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px;
+        max-width: 700px;
+        margin:0 auto;
+     }
+     .media-card{
+        width: 190px;
+        height: 110px;
+        background: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 2px;
+     }
+     .media-card img{
+        max-width: 80%;
+        max-height: 60px;
+        object-fit: contain;
+     }
+     
 
 </style>
 
 
 <body>
+    <div class="dark-section">
+        <section class="categories">
+        <div class="categories">
+            <div class="category-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/5388/5388718.png" alt"">
+            <span>БАНКИ</span>
+        </div>
+
+        <div class="category-card">
+            <img src="https://cdn-icons-png.flaticon.com/256/12904/12904306.png">
+            <span>САЛОН КРАСОТЫ</span>
+        </div>
+        <div class="category-card">
+            <img src="https://img.magnific.com/free-psd/curved-stack-money-icon-3d-illustration_56104-2816.jpg?semt=ais_hybrid&w=740&q=80">
+            <span>ФИНАНСЫ</span>
+        </div>
+
+        <div class="category-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/4483/4483122.png">
+            <span>САЛОН КРАСОТЫ</span>
+        </div>
+        <div class="category-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/8638/8638126.png">
+            <span>МЕДИЦИНА</span>
+        </div>
+
+        <div class="category-card">
+            <img src="https://img.icons8.com/ios_filled/1200/gaming.jpg">
+            <span>РАЗВЛЕЧЕНИЯ</span>
+        </div>
+
+        <div class="category-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/3566/3566523.png">
+            <span>ЕДА</span>
+        </div>
+        <div class="category-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/4337/4337668.png">
+            <span>КОСМЕТОЛОГИЯ</span>
+        </div>
+        <div class="category-card">
+            <img src="https://avatars.mds.yandex.net/i?id=7260a2ae4cdf345fe12481cf2bd2fa017d2d1c71-5647863-images-thumbs&n=13">
+        <span>ОНЛАЙН ШКОЛЫ</span>
+        </div>
+        <div class="category-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/4021/4021414.png">
+            <span>ПРОДЮСИРОВАНИЕ</span>
+        </div>
+        <div class="category-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/415/415536.png">
+            <span>БЛАГОТВОРИТЕЛЬНЫЕ ОРГАНИЗАЦИИ</span>
+
+        </div>
+        <div class="category-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/9884/9884939.png">
+            <span>КРУПНЫЕ ПРОИЗВОДСТВА</span>
+        </div>
+    </div>
+  </div>
+
+  </section>
     <section class="cases">
         <div class="conteiner">
             <h2 class="cases-title">КЕЙСЫ</h2>
@@ -220,7 +369,7 @@
             <div class="cases-grid">
 
                 <div class="cases-card">
-                    <img srk="https://img.goodfon.ru/wallpaper/big/2/b0/bulochki-assorti-vypechka.webp"alt="ФОТО НЕДОСТУПНО" class="case-image">
+                    <img src="https://img.goodfon.ru/wallpaper/big/2/b0/bulochki-assorti-vypechka.webp"alt="ФОТО НЕДОСТУПНО" class="case-image">
 
                     <div class="case-content">
                         <h3>ПЕКАРНЯ ВУОЛЛЕТ</h3>
@@ -249,7 +398,7 @@
                     </div>
                 </div>
                 <div class="cases-card">
-                    <img srk="https://img.goodfon.ru/original/2560x1600/b/f5/mikroshema-plata-makro-oboi.jpg"alt="ФОТО НЕДОСТУПНО" class="case-image">
+                    <img src="https://img.goodfon.ru/original/2560x1600/b/f5/mikroshema-plata-makro-oboi.jpg"alt="ФОТО НЕДОСТУПНО" class="case-image">
                     <div class="case-content">
                         <h3>MURATA MANUFACTURING</h3>
                         <p class="subtitle">
@@ -287,7 +436,7 @@
             <h2 class="section-title">ПОЧЕМУ МЫ?</h2>
             <div class="advantages-grid">
                 <div class="advantage-card">
-                    <img srk="c:\Users\Азовець\Pictures\Screenshots\Snímek obrazovky 2026-06-09 223050.png" alt="ФОТОТ НЕДОСТУПНО">
+                    <img src="c:\Users\Азовець\Pictures\Screenshots\Snímek obrazovky 2026-06-09 223050.png" alt="ФОТОТ НЕДОСТУПНО">
                     <h3>РАБОТАЕМ НА РЕЗУЛЬТАТ</h3>
                     <p>
                         Не выбрасываем деньги на стратегию, которая не работает
@@ -296,7 +445,7 @@
                     </p>
                 </div>
                 <div class="advantage-card">
-                    <img srk="c:\Users\Азовець\Pictures\Screenshots\Snímek obrazovky 2026-06-09 223050.png" alt="ФОТОТ НЕДОСТУПНО">
+                    <img src="c:\Users\Азовець\Pictures\Screenshots\Snímek obrazovky 2026-06-09 223050.png" alt="ФОТОТ НЕДОСТУПНО">
                     <h3>ЭТИЧНО ПОДХОДИМ К БИЗНЕСУ</h3>
                     <p>
                         Мы верим, что к успеху приводит только честная политика
@@ -305,7 +454,7 @@
                     </p>
                 </div>
                 <div class="advantage-card">
-                    <img srk="c:\Users\Азовець\Pictures\Screenshots\Snímek obrazovky 2026-06-09 223050.png" alt="ФОТОТ НЕДОСТУПНО">
+                    <img src="c:\Users\Азовець\Pictures\Screenshots\Snímek obrazovky 2026-06-09 223050.png" alt="ФОТОТ НЕДОСТУПНО">
                     <h3>ЗНАЕМ ЦИФРОВОЙ МАРКЕТИНГ</h3>
                     <p>
                         70% клиентов окупают стоимость создания сайта в течении
@@ -313,7 +462,7 @@
                     </p>
                 </div>
                 <div class="advantage-card">
-                    <img srk="c:\Users\Азовець\Pictures\Screenshots\Snímek obrazovky 2026-06-09 223050.png" alt="ФОТОТ НЕДОСТУПНО">
+                    <img src="c:\Users\Азовець\Pictures\Screenshots\Snímek obrazovky 2026-06-09 223050.png" alt="ФОТОТ НЕДОСТУПНО">
                     <h3>СТАВИМ КЛИЕНТА НА 1 МЕСТО</h3>
                     <p>
                         Мы ценим деловой подход заранее согласовываем все нюансы
@@ -332,7 +481,7 @@
         <div class="container">
             <h2 class="section-title">НАШИ КЛИЕНТЫ О НАС</h2>
             <div class="review-card">
-                <img srk="c:\Users\Азовець\Pictures\Screenshots\Snímek obrazovky 2026-06-09 223050.png" alt="ФОТОТ НЕДОСТУПНО" class="review-avatar">
+                <img src="c:\Users\Азовець\Pictures\Screenshots\Snímek obrazovky 2026-06-09 223050.png" alt="ФОТОТ НЕДОСТУПНО" class="review-avatar">
                  <div class="review-content">
                     <div class="reveiw-header">
                         <h3>Анастасия</h3>
@@ -346,7 +495,7 @@
                  </div>
             </div>
             <div class="review-card">
-                <img srk="c:\Users\Азовець\Pictures\Screenshots\Snímek obrazovky 2026-06-09 223050.png" alt="ФОТОТ НЕДОСТУПНО" class="review-avatar">
+                <img src="c:\Users\Азовець\Pictures\Screenshots\Snímek obrazovky 2026-06-09 223050.png" alt="ФОТОТ НЕДОСТУПНО" class="review-avatar">
                 <div class="review-content">
                     <div class="review-content">
                     <h3>Анастасия</h3>
@@ -360,7 +509,7 @@
             </div>
         </div>
         <div class="review-card">
-                <img srk="c:\Users\Азовець\Pictures\Screenshots\Snímek obrazovky 2026-06-09 223050.png" alt="ФОТОТ НЕДОСТУПНО" class="review-avatar">
+                <img src="c:\Users\Азовець\Pictures\Screenshots\Snímek obrazovky 2026-06-09 223050.png" alt="ФОТОТ НЕДОСТУПНО" class="review-avatar">
                 <div class="review-content">
                     <div class="review-content">
                     <h3>Анастасия</h3>
@@ -374,6 +523,31 @@
             </div>
 
     </section>
+    <section class="media-section">
+        <h2 class="media-title">СМИ О НАС</h2>
+        <div class="media-grid">
+            <div class="media-card">
+                <img src="bulochki-assorti-vypechka" alt="AccesWire">
+            </div>
+            <div class="media-card">
+                <img src="bulochki-assorti-vypechka" alt="Markets Insider">
+            </div>
+            <div class="media-card">
+                <img src="bulochki-assorti-vypechka" alt="Benzinga">
+            </div>
+            <div class="media-card">
+                <img src="bulochki-assorti-vypechka" alt="Mornigstar">
+            </div>
+            <div class="media-card">
+                <img src="bulochki-assorti-vypechka" alt="MarketWatch">
+            </div>
+        </div>
+    </section>
+        
+    
+
+
+    
     
 </body>
 </html>
