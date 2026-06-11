@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,14 +14,18 @@
     }
     .dark-section{
         background: #001d29;
-        padding:80
+        padding:80px;
     }
     .categories{
-            max-width:1100px;
-            margin:0 auto;
+            max-width:1400px;
+            width: 100%;
             display: grid;
             grid-template-columns: repeat(4,1fr);
             gap:20px;
+            padding:0 40px;
+            box-sizing: border-box;
+            margin:0 auto;
+            
         }
         .category-card{
             background:#1a3b49;
@@ -30,7 +35,8 @@
             display:flex;
             flex-direction: column;
             justify-content: center;
-            align-items: flex-start;
+            align-items: center;
+            text-align: center;
             transition: 0.3s;
             cursor:pointer;
         }
@@ -654,7 +660,7 @@
 <body>
     <div class="dark-section">
         <section class="categories">
-        <div class="categories">
+        
             <div class="category-card">
             <img src="https://cdn-icons-png.flaticon.com/512/5388/5388718.png" alt"">
             <span>БАНКИ</span>
@@ -709,7 +715,7 @@
             <span>КРУПНЫЕ ПРОИЗВОДСТВА</span>
         </div>
     </div>
-  </div>
+  
 
   </section>
     <section class="cases">
@@ -833,7 +839,7 @@
             <div class="review-card">
                 <img src="c:\Users\Азовець\Pictures\Screenshots\Snímek obrazovky 2026-06-09 223050.png" alt="ФОТОТ НЕДОСТУПНО" class="review-avatar">
                  <div class="review-content">
-                    <div class="reveiw-header">
+                    <div class="review-header">
                         <h3>Анастасия</h3>
                         <span>Директор</span>
                     </div>
