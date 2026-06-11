@@ -35,12 +35,12 @@
             cursor:pointer;
         }
         .category-card:hover {
-            transform: translate(-4px);
+            transform: translateY(-4px);
             background: #1f4657;
         }
         .category-card img{
-            width: 100%;
-            height: 120px;
+            height: 60px;
+            margin-bottom: 15px;
             object-fit:contain;
         }
         .category-card span{
@@ -461,6 +461,192 @@
                 padding: 20px;
             }
         }
+        .analysis-section{
+            padding:70px 0;
+        }
+        .analysis-card{
+            background: #ffffff;
+            padding:50px;
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            gap:50px
+        }
+        .analysis-card.reverse{
+            flex-direction: row-reverse;
+        }
+        .analysis-image{
+            flex:1;
+        }
+        .analysis-image img{
+            max-width: 100%;
+            height: auto;
+        }
+        .analysis-content{
+            flex:1;
+        }
+        .analysis-title{
+            font-size: 44px;
+            font-weight: 700;
+            color:#001d29;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+        .analysis-subtitle{
+            color:#68767e;
+            margin-bottom:25px;
+        }
+        .analysis-box{
+            background:#e5ecef;
+            padding:25px;
+        }
+        .analysis-box h3{
+            margin-top: 0;
+            color:#001d29;
+        }
+        .analysis-box ul{
+            padding-left: 20px;
+        }
+        .analysis-box li{
+            margin-bottom: 10px;
+        }
+        @media screen and (max-width:760px) {
+            .analysis-card,
+            .analysis-card.reverse{
+                flex-direction: column;
+                text-align: center;
+            }
+            .analysis-title{
+                font-size: 32px;
+            }
+            
+        }
+        .section-title{
+            text-align: center;
+            font-size: 44px;
+            font-weight: 800;
+            color:#001d29;
+            margin-bottom: 50px;
+
+        }
+        .btn{
+            display: inline-block;
+            background-color: #c82625;
+            color: #ffffff;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 0.85rem;
+            padding: 14px 28px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: 0.3s ease;
+            letter-spacing: 0.5px;
+        }
+        .btn-hover{
+            background-color: #b71c1c;
+        }
+        .order-section{
+            padding:60px 0;
+            background: #e5ecef;
+        }
+        .form-container{
+            background-color: #00735c;
+            border-radius: 12px;
+            width:100%;
+            display:flex;
+            flex-direction: row;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,.15);
+            padding:50px;
+            color:#ffffff;
+            box-sizing: border-box;
+        }
+        .form-section{
+            flex:1;
+            max-width: 450px;
+            z-index: 2;
+        }
+        .form-section h2{
+            font-size:28px;
+            font-weight: 800;
+            margin:0 0 10px 0;
+            letter-spacing: 0.5px;
+        }
+        .form-section .form-subtitle{
+            font-size: 13px;
+            line-height: 1.4;
+            margin-bottom: 25px;
+            opacity:0.9;
+        }
+        .input-group{
+            margin-bottom: 12px;
+        }
+        .input-group input,
+        .input-group textarea{
+            width: 100%;
+            padding:14px 16px;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            color:#333333;
+            outline: none;
+            background-color: #ffffff;
+            box-sizing: border-box;
+        }
+        .input-group textarea{
+            resize:none;
+
+        }
+        .agreement{
+            font-size: 10px;
+            line-height: 1.3;
+            margin-bottom: 20px;
+            opacity: 0.7;
+        }
+        .submit-btn{
+            width: 100%;
+            background-color: #c82625;
+            color:#ffffff;
+            border: none;
+            padding: 15px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background-color 0,2 ease;
+            letter-spacing: 1px;
+        }
+        .submit-btn:hover{
+            background-color: #b71c1c;
+        }
+        .visual-section{
+            flex:1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+        .mockup-container{
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .phone-img{
+            max-height: 400px;
+            object-fit: contain;
+        }
+        .charter-img{
+            max-height: 350px;
+            position: absolute;
+            right:10px;
+            bottom:-20px;
+            object-fit: contain;
+        }
      
 </style>
 
@@ -722,7 +908,7 @@
                 <a href="#" class="btn" style="margin-top: 15px;">Определить вашу цель</a>
             </div>
             <div class="promo-image">
-                <img src="https://via.placeholder.com/220x300/072D42/FFFFFF?text=3D+Illustration" alt="Иллюстрация">
+                <img src="" alt="Иллюстрация">
             </div>
         </section>
 
@@ -731,7 +917,7 @@
 
             <div class="team-grid">
                 <div class="member-card">
-                    <img src="https://via.placeholder.com/250x250?text=Alexandra" alt="Alexandra" class="member-photo">
+                    <img src="" alt="Alexandra" class="member-photo">
                     <div class="member-info">
                         <div class="member-name">Alexandra</div>
                         <div class="member-role">Founder of the agency</div>
@@ -739,7 +925,7 @@
                 </div>
 
                 <div class="member-card">
-                    <img src="https://via.placeholder.com/250x250?text=Nadezhda" alt="Nadezhda" class="member-photo">
+                    <img src="" alt="Nadezhda" class="member-photo">
                     <div class="member-info">
                         <div class="member-name">Nadezhda</div>
                         <div class="member-role">Agency Manager</div>
@@ -747,7 +933,7 @@
                 </div>
 
                 <div class="member-card">
-                    <img src="https://via.placeholder.com/250x250?text=Alexandra" alt="Alexandra" class="member-photo">
+                    <img src="" alt="Alexandra" class="member-photo">
                     <div class="member-info">
                         <div class="member-name">Alexandra</div>
                         <div class="member-role">Project Manager</div>
@@ -755,7 +941,7 @@
                 </div>
 
                 <div class="member-card">
-                    <img src="https://via.placeholder.com/250x250?text=Maria" alt="Maria" class="member-photo">
+                    <img src="" alt="Maria" class="member-photo">
                     <div class="member-info">
                         <div class="member-name">Maria</div>
                         <div class="member-role">Project Manager, Designer</div>
@@ -765,7 +951,7 @@
 
             <div class="team-grid bottom">
                 <div class="member-card">
-                    <img src="https://via.placeholder.com/250x250?text=Anastasia" alt="Anastasia" class="member-photo">
+                    <img src="" alt="Anastasia" class="member-photo">
                     <div class="member-info">
                         <div class="member-name">Anastasia</div>
                         <div class="member-role">Producer, Marketer</div>
@@ -773,7 +959,7 @@
                 </div>
 
                 <div class="member-card">
-                    <img src="https://via.placeholder.com/250x250?text=Nadezhda" alt="Nadezhda" class="member-photo">
+                    <img src="" alt="Nadezhda" class="member-photo">
                     <div class="member-info">
                         <div class="member-name">Nadezhda</div>
                         <div class="member-role">Copywriter</div>
@@ -781,7 +967,7 @@
                 </div>
 
                 <div class="member-card">
-                    <img src="https://via.placeholder.com/250x250?text=Dmitry" alt="Dmitry" class="member-photo">
+                    <img src="" alt="Dmitry" class="member-photo">
                     <div class="member-info">
                         <div class="member-name">Dmitry</div>
                         <div class="member-role">Team Lead</div>
@@ -797,9 +983,91 @@
                 <a href="#" class="btn">Оставить заявку на консультацию</a>
             </div>
         </section>
+        </div>
+    </div>
 
-    </div>
-    </div>
-        
+        <section class="analysis-section">
+            <div class="container">
+                <div class="analysis-card">
+                <div class="analysis-image">
+                    <img src="" alt="ФОТО НЕДОСТУПНО"> 
+                </div>
+                <div class="analysis-content">
+                    <h2 class="analysis-title">
+                        КАЖДЫЙ ПРОЕКТ УНИКАЛЕН
+                    </h2>
+                    <div class="analysis-subtitle">
+                        Но первый шаг в работе всегда один-
+                        тщательний анализ конкурентов
+                    </div>
+                    <div class="analysis-box">
+                        <h3>
+                            Это основной инструмент увправление продажам
+                        </h3>
+                        <ul>
+                            <li>Анализ конкурентоспособности</li>
+                            <li>Анализ рынка</li>
+                            <li>Поиск УТП</li>
+                            <li>Выстраивание бренда</li>
+                            <li>Разработка стратегии продвижения</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="analysis-card reverse">
+                <div class="analysis-image">
+                    <img src="" alt="ФОТО НЕДОСТУПНО">
+                </div>
+                <div clas="analysis-content">
+                    <h2 class="analysis-title">
+                        Аватар
+                    </h2>
+                    <p>
+                        Проект не может быть успешным,
+                        если нет понимания целевой аудитории
+                    </p>
+                    <div class="analysis-box">
+                        <h3>
+                            Хорошое знание аватара позволяет
+                        </h3>
+                        <ul>
+                            <li>Улучшить комуникацию</li>
+                            <li>Запускать эффективную рекламу</li>
+                            <li>Создавать интересный контент</li>
+                            <li>Строить контент-стратегию</li>
+                            <li>Упростить процес продаж</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="order-section">
+            <div class="container">
+                <div class="form-container">
+                    <div class="form-section">
+                        <h2>ОСТАВИТЬ ЗАЯВКУ</h2>
+                        <p class="form-subtitle">Проект не может быть успешен, если нет понимиания для кого он</p>
+                        <form action="#" method="post">
+                            <div class="input-group"><input type="text" placeholder="Имя" required></div>
+                            <div class="input-group"><input type="text" placeholder="7_777_7777_777" required></div>
+                            <div class="input-group"><input type="text" placeholder="e-mail" required></div>
+                            <div class="input-group"><input type="text" placeholder="Название Компании" required></div>
+                            <div class="input-group"><textarea placeholder="Коментарий" rows="3"></textarea></div>
+                            <p class="agreement">Нажимая на кнопку ты даешь согласие на обработку персональных данных</p>
+                            <button type="submit" class="submit-btn">ОТПРАВИТЬ</button>
+                        </form>
+                    </div>
+                    <div class="visual-section">
+                        <div class="mockup-container">
+                            <img src="" alt="Telephon" class="phone-img">
+                            <img src="" alt="Persona" class="charter-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
 </body>
 </html>
